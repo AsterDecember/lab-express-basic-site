@@ -13,6 +13,10 @@ app.use(express.static('public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
 
+//hbs.registerPartial(__dirname+'/views/partials')
+
+app.locals.title = 'Mike'
+
 app.get('/',routes.index);
 app.get('/about',routes.about);
 app.get('/photo',routes.photoGallery);

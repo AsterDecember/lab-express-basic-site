@@ -2,8 +2,9 @@
 module.exports = {
 
     index: (req, res, next) => {
+
         let data = {
-            name: "Mike Havok",
+            name: 'Mike',
             bootcamp: "IronHack WebDev",
             route : ''
         }
